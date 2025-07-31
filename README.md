@@ -1,12 +1,6 @@
 # zero-to-hero
 repo following the hands-on deep learning course, taught by Andrej Karpathy
 
-
-## Current features
-
-Currently it is just an n-gram model, which makes generates new pokemon names based on letter frequencies
-
-## info
 # makemore
 
 makemore takes one text file as input, where each line is assumed to be one training thing, and generates more things like it. Under the hood, it is an autoregressive character-level language model, with a wide choice of models from bigrams all the way to a Transformer (exactly as seen in GPT). For example, we can feed it a database of names, and makemore will generate cool baby name ideas that all sound name-like, but are not already existing names. Or if we feed it a database of company names then we can generate new ideas for a name of a company. Or we can just feed it valid scrabble words and generate english-like babble.
@@ -16,7 +10,7 @@ This is not meant to be too heavyweight library with a billion switches and knob
 Current implementation follows a few key papers:
 
 - [x] Bigram (one character predicts the next one with a lookup table of counts)
-- [] MLP, following [Bengio et al. 2003](https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf)
+- [x] MLP, following [Bengio et al. 2003](https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf)
 - [] CNN, following [DeepMind WaveNet 2016](https://arxiv.org/abs/1609.03499) (in progress...)
 - [] RNN, following [Mikolov et al. 2010](https://www.fit.vutbr.cz/research/groups/speech/publi/2010/mikolov_interspeech2010_IS100722.pdf)
 - [] LSTM, following [Graves et al. 2014](https://arxiv.org/abs/1308.0850)
@@ -25,13 +19,13 @@ Current implementation follows a few key papers:
 
 ### Usage
 
-The included `Pokemon.csv` dataset, as an example, has mostly every Pokemon name takes from [kaggle.com](https://www.kaggle.com/datasets/mlomuscio/pokemon). Post-processed, it looks like:
+The included `Pokemon_moves.csv` dataset, as an example, has all Pokemon moves up until 2019, taken from [kaggle.com](https://www.kaggle.com/datasets/supervegate/pokemon-moveset?resource=download). Post-processed, it looks like:
 
 ```
-Bublasaur
-Charizard
-Blastoise
-Pikachu
+Absorb
+Acid
+Aura Sphere
+Bouncy Bubble
 ...
 ```
 
