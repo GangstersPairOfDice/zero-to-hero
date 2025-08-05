@@ -1,5 +1,11 @@
 # zero-to-hero
-repo following the hands-on deep learning course, taught by Andrej Karpathy
+repo following the [hands-on deep learning course, taught by Andrej Karpathy](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ), using [tinygrad](https://github.com/tinygrad/tinygrad).
+
+# Warning
+
+For first 3 implementations (bigram, mlp. mlp2), I was frankensteining PyTorch syntax and logic with tinygrad, therefore it sucks. Should not be used for real as it is extremely inefficient.
+
+From RNN onwards, I write the logic strictly for tinygrad, so it should be okay.
 
 # makemore
 
