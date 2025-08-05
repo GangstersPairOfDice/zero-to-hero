@@ -3,7 +3,7 @@ repo following the [hands-on deep learning course, taught by Andrej Karpathy](ht
 
 # Warning
 
-For first 3 implementations (bigram, mlp. mlp2), I was frankensteining PyTorch logic with tinygrad, therefore it sucks. Should not be used for real as it is extremely inefficient.
+For first 3 implementations (bigram, mlp. mlp2), I was frankensteining PyTorch logic with tinygrad, therefore it sucks. Should not be used for real as it is extremely inefficient. More of a study on how neural networks inner workings work. There it is okay.
 
 From mlp_manual_backprop, RNN, and onwards, I write the logic strictly for tinygrad, so it should be okay.
 
